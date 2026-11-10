@@ -1,0 +1,12 @@
+# Credenciales y archivos locales: nunca se suben
+iot.properties
+local.properties
+secrets.h
+wifi.h
+db.php
+*.key
+*.pem
+.gradle/
+build/
+.idea/
+.pio/
