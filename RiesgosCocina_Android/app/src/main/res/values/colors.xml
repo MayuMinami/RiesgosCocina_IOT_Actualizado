@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="rosa_fondo">#FFFCE4EC</color>
+    <color name="rosa_tarjeta">#FFFFF5F8</color>
+    <color name="rosa">#FFF48FB1</color>
+    <color name="rosa_fuerte">#FFEC407A</color>
+    <color name="borgona">#FF800020</color>
+    <color name="borgona_oscuro">#FF5C0017</color>
+    <color name="borgona_suave">#FF9E4A5C</color>
+    <color name="verde_ok">#FF2E7D32</color>
+    <color name="rojo_alerta">#FFC62828</color>
+    <color name="rojo_claro">#FFFFEBEE</color>
+    <color name="alerta_fondo">#FFC62828</color>
+</resources>

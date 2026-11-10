@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa_fondo"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/home_bienvenida"
+                android:textColor="@color/borgona"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/borgona_suave"
+                android:textSize="15sp"
+                tools:text="usuario@correo.com" />
+
+            <TextView
+                android:id="@+id/tvConexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="● ESP32 en línea · MQTT con TLS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/menu_titulo"
+                android:textColor="@color/borgona"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardMonitor"
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/TarjetaMenuContenido">
+
+                    <TextView
+                        style="@style/TarjetaMenuTitulo"
+                        android:text="@string/menu_monitor" />
+
+                    <TextView
+                        style="@style/TarjetaMenuTexto"
+                        android:text="@string/menu_monitor_desc" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardControl"
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/TarjetaMenuContenido">
+
+                    <TextView
+                        style="@style/TarjetaMenuTitulo"
+                        android:text="@string/menu_control" />
+
+                    <TextView
+                        style="@style/TarjetaMenuTexto"
+                        android:text="@string/menu_control_desc" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHistorial"
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/TarjetaMenuContenido">
+
+                    <TextView
+                        style="@style/TarjetaMenuTitulo"
+                        android:text="@string/menu_historial" />
+
+                    <TextView
+                        style="@style/TarjetaMenuTexto"
+                        android:text="@string/menu_historial_desc" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardEnergia"
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/TarjetaMenuContenido">
+
+                    <TextView
+                        style="@style/TarjetaMenuTitulo"
+                        android:text="@string/menu_energia" />
+
+                    <TextView
+                        style="@style/TarjetaMenuTexto"
+                        android:text="@string/menu_energia_desc" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPruebas"
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/TarjetaMenuContenido">
+
+                    <TextView
+                        style="@style/TarjetaMenuTitulo"
+                        android:text="@string/menu_pruebas" />
+
+                    <TextView
+                        style="@style/TarjetaMenuTexto"
+                        android:text="@string/menu_pruebas_desc" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnReconectar"
+        style="@style/BotonBorde"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_reconectar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_cerrar_sesion"
+        android:textColor="@color/borgona"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/rosa" />
+</LinearLayout>

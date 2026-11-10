@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/monitor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa_fondo"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MonitorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TituloPantalla"
+                android:text="@string/monitor_titulo" />
+
+            <TextView
+                android:id="@+id/tvConexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="● ESP32 en línea · MQTT con TLS" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAlerta"
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/alerta_fondo"
+                app:strokeColor="@color/alerta_fondo"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvAlerta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="¡ALERTA EN LA COCINA!\nGas elevado (3628)" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/TarjetaDato"
+                    android:layout_marginEnd="6dp">
+
+                    <LinearLayout style="@style/TarjetaMenuContenido">
+
+                        <TextView
+                            style="@style/DatoEtiqueta"
+                            android:text="@string/dato_temp" />
+
+                        <TextView
+                            android:id="@+id/tvTemp"
+                            style="@style/DatoValor"
+                            android:text="@string/sin_dato" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/TarjetaDato"
+                    android:layout_marginStart="6dp">
+
+                    <LinearLayout style="@style/TarjetaMenuContenido">
+
+                        <TextView
+                            style="@style/DatoEtiqueta"
+                            android:text="@string/dato_hum" />
+
+                        <TextView
+                            android:id="@+id/tvHum"
+                            style="@style/DatoValor"
+                            android:text="@string/sin_dato" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout style="@style/TarjetaMenuContenido">
+
+                    <TextView
+                        style="@style/DatoEtiqueta"
+                        android:text="@string/dato_gas" />
+
+                    <TextView
+                        android:id="@+id/tvGas"
+                        style="@style/DatoValor"
+                        android:text="@string/sin_dato" />
+
+                    <TextView
+                        android:id="@+id/tvEstado"
+                        style="@style/TarjetaMenuTexto"
+                        android:layout_marginTop="10dp"
+                        tools:text="Sistema armado · alarma activa" />
+
+                    <TextView
+                        android:id="@+id/tvActualizado"
+                        style="@style/TarjetaMenuTexto"
+                        tools:text="Última lectura #12 a las 12:30:01" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                style="@style/Subtitulo"
+                android:text="@string/alertas_recientes" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAlertas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/sin_alertas"
+                    android:textColor="@color/borgona"
+                    android:textSize="14sp" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rosa_fondo">#FF000000</color>
+    <color name="rosa_tarjeta">#FF121212</color>
+    <color name="rosa">#FF3A0A1A</color>
+    <color name="rosa_fuerte">#FFF06292</color>
+    <color name="borgona">#FFF8BBD0</color>
+    <color name="borgona_oscuro">#FF000000</color>
+    <color name="borgona_suave">#FFC48B9F</color>
+    <color name="verde_ok">#FF66BB6A</color>
+    <color name="rojo_alerta">#FFFF5252</color>
+    <color name="rojo_claro">#FF3B1010</color>
+    <color name="alerta_fondo">#FF8E0000</color>
+</resources>

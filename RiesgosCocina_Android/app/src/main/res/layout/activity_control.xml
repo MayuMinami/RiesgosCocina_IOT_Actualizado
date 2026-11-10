@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa_fondo"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ControlActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TituloPantalla"
+                android:text="@string/control_titulo" />
+
+            <TextView
+                android:id="@+id/tvConexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="● ESP32 en línea · MQTT con TLS" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="@color/borgona"
+                    android:textSize="16sp"
+                    tools:text="Sistema: Armado\nAlarma: inactiva" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnArmar"
+                style="@style/BotonRosa"
+                android:text="@string/btn_armar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDesarmar"
+                style="@style/BotonBorde"
+                android:text="@string/btn_desarmar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSilenciar"
+                style="@style/BotonRosa"
+                android:text="@string/btn_silenciar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRestablecer"
+                style="@style/BotonBorde"
+                android:text="@string/btn_restablecer" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEstado"
+                style="@style/BotonBorde"
+                android:text="@string/btn_estado" />
+
+            <TextView
+                style="@style/Subtitulo"
+                android:text="@string/prueba_seguridad" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPruebaFirma"
+                style="@style/BotonBorde"
+                android:text="@string/btn_prueba_firma" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPruebaReplay"
+                style="@style/BotonBorde"
+                android:text="@string/btn_prueba_replay" />
+
+            <TextView
+                style="@style/Subtitulo"
+                android:text="@string/registro_eventos" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvEventos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/sin_eventos"
+                    android:textColor="@color/borgona"
+                    android:textSize="13sp" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

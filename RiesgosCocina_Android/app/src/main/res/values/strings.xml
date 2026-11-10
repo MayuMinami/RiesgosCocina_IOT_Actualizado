@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Riesgos Cocina</string>
+
+    <string name="titulo_sistema">Sistema de prevención\nde riesgos en la cocina</string>
+    <string name="subtitulo_login">Inicia sesión o registra tu cuenta</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="ayuda_password">Mínimo 8 caracteres</string>
+
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_guardar">Guardar usuario</string>
+    <string name="btn_eliminar">Eliminar usuario</string>
+    <string name="btn_reconectar">Reconectar ahora</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+
+    <string name="error_correo">Ingresa un correo válido</string>
+    <string name="error_password">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="error_conexion">No se pudo conectar con el servidor. Revisa que estés en la misma red WiFi que la Raspbian-IoT.</string>
+
+    <string name="confirmar_eliminar_titulo">Eliminar usuario</string>
+    <string name="confirmar_eliminar_mensaje">¿Seguro que deseas eliminar la cuenta %1$s? Esta acción no se puede deshacer.</string>
+    <string name="si_eliminar">Sí, eliminar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string name="home_bienvenida">¡Bienvenido!</string>
+    <string name="home_sesion_de">Sesión iniciada como</string>
+    <string name="home_descripcion">Desde aquí podrás monitorear los sensores de tu cocina (gas y temperatura) y recibir alertas de riesgo.</string>
+    <string name="home_proximamente">Módulo de sensores IoT: próximamente</string>
+
+    <string name="menu_titulo">Menú principal</string>
+    <string name="menu_monitor">Monitor en tiempo real</string>
+    <string name="menu_monitor_desc">Temperatura, humedad, gas y alertas del ESP32</string>
+    <string name="menu_control">Control del ESP32</string>
+    <string name="menu_control_desc">Armar, desarmar, silenciar y restablecer la alarma</string>
+    <string name="menu_historial">Historial y DynamoDB</string>
+    <string name="menu_historial_desc">Lecturas guardadas y sincronización con AWS</string>
+
+    <string name="menu_energia">Energía y tema</string>
+    <string name="menu_energia_desc">Cambiar el tema y medir el consumo de batería</string>
+    <string name="energia_titulo">Energía y tema</string>
+    <string name="energia_descripcion">Compara el consumo de la app con el tema claro y con el oscuro. La medición fija el brillo al 50 % y mantiene la pantalla encendida para que la comparación sea justa.</string>
+    <string name="btn_tema_claro">Usar tema claro</string>
+    <string name="btn_tema_oscuro">Usar tema oscuro</string>
+    <string name="energia_medicion">Medición de consumo</string>
+    <string name="energia_listo">Listo para medir</string>
+    <string name="energia_aviso">Desconecta el cable USB antes de empezar y no uses el teléfono durante la prueba. Carga la batería a más de 20 %.</string>
+    <string name="btn_medir_1">Medir 1 minuto (prueba rápida)</string>
+    <string name="btn_medir_5">Medir 5 minutos</string>
+    <string name="btn_cancelar_medicion">Cancelar medición</string>
+    <string name="energia_resultados">Resultados guardados</string>
+    <string name="energia_sin_resultados">Aún no hay mediciones</string>
+    <string name="btn_borrar_resultados">Borrar resultados</string>
+
+    <string name="monitor_titulo">Monitor en tiempo real</string>
+    <string name="dato_temp">Temperatura</string>
+    <string name="dato_hum">Humedad</string>
+    <string name="dato_gas">Gas</string>
+    <string name="sin_dato">--</string>
+    <string name="alertas_recientes">Alertas recientes</string>
+    <string name="sin_alertas">Sin alertas registradas</string>
+
+    <string name="control_titulo">Control del ESP32</string>
+    <string name="btn_armar">Armar sistema</string>
+    <string name="btn_desarmar">Desarmar sistema</string>
+    <string name="btn_silenciar">Silenciar alarma</string>
+    <string name="btn_restablecer">Restablecer alarma</string>
+    <string name="btn_estado">Consultar estado</string>
+    <string name="registro_eventos">Registro de eventos</string>
+    <string name="sin_eventos">Sin eventos todavía</string>
+    <string name="comando_enviado">Comando enviado: %1$s</string>
+    <string name="comando_sin_conexion">El ESP32 aún no está conectado</string>
+
+    <string name="historial_titulo">Historial y DynamoDB</string>
+    <string name="btn_recuperar">Recuperar desde la nube</string>
+    <string name="btn_borrar_local">Borrar copia local sincronizada</string>
+    <string name="btn_sincronizar">Sincronizar ahora</string>
+    <string name="ultimas_lecturas">Últimas lecturas guardadas</string>
+    <string name="sin_lecturas">Aún no hay lecturas guardadas</string>
+    <string name="prueba_seguridad">Prueba de seguridad</string>
+    <string name="btn_prueba_firma">Enviar comando con firma falsa</string>
+    <string name="btn_prueba_replay">Reenviar comando ya usado (replay)</string>
+    <string name="prueba_enviada">Prueba enviada: el ESP32 debe rechazarla</string>
+    <string name="menu_pruebas">Pruebas del sistema</string>
+    <string name="menu_pruebas_desc">Verifica cifrado, HTTPS, rechazo de comandos y compatibilidad</string>
+    <string name="pruebas_titulo">Pruebas del sistema</string>
+    <string name="pruebas_descripcion">Ejecuta en vivo las verificaciones de seguridad, conexión y compatibilidad de esta instalación.</string>
+    <string name="btn_ejecutar_pruebas">Ejecutar todas las pruebas</string>
+    <string name="pruebas_vacio">Aún no se han ejecutado las pruebas.</string>
+    <string name="pruebas_ejecutando">Ejecutando pruebas…</string>
+    <string name="pruebas_resultado">Resultado: %1$d de %2$d pruebas superadas</string>
+</resources>

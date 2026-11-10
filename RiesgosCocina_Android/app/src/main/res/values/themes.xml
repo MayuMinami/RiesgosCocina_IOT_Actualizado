@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.RiesgosCocina" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/borgona</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/rosa</item>
+        <item name="colorOnPrimaryContainer">@color/borgona</item>
+        <item name="colorSecondary">@color/rosa_fuerte</item>
+        <item name="colorError">@color/rojo_alerta</item>
+        <item name="colorSurface">@color/rosa_tarjeta</item>
+        <item name="colorOnSurface">@color/borgona</item>
+        <item name="android:colorBackground">@color/rosa_fondo</item>
+        <item name="android:textColorPrimary">@color/borgona</item>
+        <item name="android:textColorSecondary">@color/borgona_suave</item>
+        <item name="android:statusBarColor">@color/borgona_oscuro</item>
+    </style>
+
+    <style name="Theme.RiesgosCocina" parent="Base.Theme.RiesgosCocina" />
+</resources>

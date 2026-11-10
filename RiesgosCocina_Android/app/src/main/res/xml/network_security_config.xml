@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sin tráfico en claro. La API del login (Raspbian) usa un certificado propio que se fija aquí como única raíz de confianza. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="false">192.168.1.9</domain>
+        <domain includeSubdomains="false">192.168.100.15</domain>
+        <trust-anchors>
+            <certificates src="@raw/servidor_api" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

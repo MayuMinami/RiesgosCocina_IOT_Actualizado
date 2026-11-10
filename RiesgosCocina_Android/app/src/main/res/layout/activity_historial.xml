@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/historial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa_fondo"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".HistorialActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TituloPantalla"
+                android:text="@string/historial_titulo" />
+
+            <TextView
+                android:id="@+id/tvConexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="● ESP32 en línea · MQTT con TLS" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/TarjetaMenuContenido">
+
+                    <TextView
+                        android:id="@+id/tvTotales"
+                        style="@style/TarjetaMenuTitulo"
+                        android:textSize="15sp"
+                        tools:text="Guardadas: 40 · En DynamoDB: 38 · Pendientes: 2" />
+
+                    <TextView
+                        android:id="@+id/tvSync"
+                        style="@style/TarjetaMenuTexto"
+                        tools:text="Todo sincronizado con DynamoDB" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSincronizar"
+                style="@style/BotonRosa"
+                android:layout_marginTop="0dp"
+                android:text="@string/btn_sincronizar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRecuperar"
+                style="@style/BotonRosa"
+                android:text="@string/btn_recuperar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBorrarLocal"
+                style="@style/BotonBorde"
+                android:text="@string/btn_borrar_local" />
+
+            <TextView
+                style="@style/Subtitulo"
+                android:text="@string/ultimas_lecturas" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/TarjetaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLecturas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:lineSpacingExtra="2dp"
+                    android:padding="16dp"
+                    android:text="@string/sin_lecturas"
+                    android:textColor="@color/borgona"
+                    android:textSize="13sp" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
